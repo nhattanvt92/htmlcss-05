@@ -12,6 +12,14 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 :root {
     --primary-color: #7264d6;
     --color-text: #212832;
