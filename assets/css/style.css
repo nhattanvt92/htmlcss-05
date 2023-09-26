@@ -957,6 +957,7 @@ select {
 }
 
 .blog-item__desc {
+    display: inline-block;
     color: #212832;
     font-size: 1.8rem;
     font-weight: 600;
