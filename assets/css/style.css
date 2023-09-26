@@ -18,6 +18,8 @@ textarea,
 select {
     font-family: inherit;
     font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -221,6 +223,7 @@ select {
     border: none;
     flex-shrink: 0;
     height: 78%;
+    cursor: pointer;
 }
 
 .header-hero__note {
@@ -755,12 +758,17 @@ select {
     flex-shrink: 0;
 }
 
-.testimonial-item:hover {
+/* .testimonial-item:hover .testimonial-item__box {
+    filter: drop-shadow(0px 22px 15px rgba(0, 0, 0, 0.07));
+} */
+
+.testimonial-item:has(.testimonial-item__bot:hover) .testimonial-item__box {
     filter: drop-shadow(0px 22px 15px rgba(0, 0, 0, 0.07));
 }
 
-.testimonial-item:hover .testimonial-item__box::after,
-.testimonial-item:hover .testimonial-item__box {
+.testimonial-item:has(.testimonial-item__bot:hover)
+    .testimonial-item__box::after,
+.testimonial-item:has(.testimonial-item__bot:hover) .testimonial-item__box {
     border-color: transparent;
 }
 
@@ -803,6 +811,12 @@ select {
     line-height: 1.54;
 }
 
+.testimonial-item__bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .testimonial-item__avatar {
     display: flex;
     align-items: flex-end;
@@ -812,6 +826,7 @@ select {
     border-radius: 52px;
     margin-top: 110px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .testimonial-item__avatar-img {
@@ -841,6 +856,7 @@ select {
     font-weight: 600;
     line-height: 1.38;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .testimonial-item__job {
@@ -849,6 +865,7 @@ select {
     font-size: 1.8rem;
     line-height: 1.66;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 .testimonial__block-wrap {
@@ -1100,6 +1117,7 @@ select {
     border-radius: 6px;
     background: #7264d6;
     border: none;
+    cursor: pointer;
 }
 
 .footer__contact-info {
