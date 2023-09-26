@@ -164,7 +164,9 @@
                             <input
                                 class="hero-form__input"
                                 placeholder="Your email address"
-                                validate
+                                required
+                                validator
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 type="email"
                                 name="email"
                                 id="email"
@@ -180,12 +182,18 @@
                     <div class="hero-media">
                         <figure class="hero-media__img-wrap">
                             <img
+                                data-aos="fade-down"
+                                data-aos-delay="400"
                                 class="hero-media__img"
                                 src="./assets/img/hero.png"
                                 alt="Mobile banking app"
                             />
                             <!-- label left -->
-                            <div class="hero-label-left">
+                            <div
+                                data-aos="fade-right"
+                                data-aos-delay="400"
+                                class="hero-label-left"
+                            >
                                 <img
                                     class="hero-label-left__img"
                                     src="./assets/icon/arrow-down.svg"
@@ -198,7 +206,11 @@
                             </div>
 
                             <!-- label right -->
-                            <div class="hero-label-right">
+                            <div
+                                data-aos="fade-left"
+                                data-aos-delay="400"
+                                class="hero-label-right"
+                            >
                                 <img
                                     src="./assets/icon/secured-funds.svg"
                                     alt=""
@@ -216,7 +228,11 @@
                                 </div>
                             </div>
                             <!-- label circle -->
-                            <div class="hero-label-circle">
+                            <div
+                                data-aos="fade-up"
+                                data-aos-delay="600"
+                                class="hero-label-circle"
+                            >
                                 <span class="hero-label-circle__percent"
                                     >0%</span
                                 >
@@ -233,13 +249,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="work-media">
-                            <figure class="work-media__img-bg">
+                            <figure
+                                data-aos="flip-left"
+                                class="work-media__img-bg"
+                            >
                                 <img
                                     class="work-media__img"
                                     src="./assets/img/work-img.png"
                                     alt=""
                                 />
-                                <div class="work-media__label-bot">
+                                <div
+                                    data-aos="zoom-out"
+                                    data-aos-delay="400"
+                                    class="work-media__label-bot"
+                                >
                                     <img
                                         src="./assets/icon/work-label-icon-1.svg"
                                         alt=""
@@ -254,6 +277,9 @@
                                     </div>
                                 </div>
                                 <img
+                                    data-aos-delay="300"
+                                    data-aos="fade-up-left"
+                                    data-aos="fade-down-left"
                                     class="work-media__label-top"
                                     src="./assets/icon/work-label-card.svg"
                                     alt=""
@@ -337,12 +363,17 @@
                         <figure class="feature-media">
                             <span class="">
                                 <img
+                                    data-aos="zoom-out-left"
                                     class="feature-media__img"
                                     src="./assets/img/feature-card.png"
                                     alt="master card"
                                 />
                             </span>
-                            <div class="feature-label-top">
+                            <div
+                                data-aos="fade-down"
+                                data-aos-delay="300"
+                                class="feature-label-top"
+                            >
                                 <div class="feature-label-top__img"></div>
                                 <div class="feature-label-top__text">
                                     <p class="feature-label-top__text-title">
@@ -361,7 +392,11 @@
                                     >
                                 </div>
                             </div>
-                            <div class="feature-label-bot">
+                            <div
+                                data-aos="fade-left"
+                                data-aos-delay="300"
+                                class="feature-label-bot"
+                            >
                                 <div class="feature-label-bot__img"></div>
                                 <p class="feature-label-bot__desc">Income</p>
                                 <span class="feature-label-bot__percent"
@@ -372,7 +407,7 @@
                     </div>
                     <!-- Feature 2 -->
                     <div class="row feature-2__row">
-                        <figure class="feature-2-media">
+                        <figure data-aos="zoom-in" class="feature-2-media">
                             <span class="feature-2-media__bg">
                                 <img
                                     class="feature-2-media__img"
@@ -380,14 +415,22 @@
                                     alt="master card"
                                 />
                             </span>
-                            <div class="feature-sticker">
+                            <div
+                                data-aos="zoom-out"
+                                data-aos-delay="600"
+                                class="feature-sticker"
+                            >
                                 <img
                                     src="./assets/icon/money-icon.svg"
                                     alt=""
                                     class="feature-sticker__img"
                                 />
                             </div>
-                            <div class="feature-2-method">
+                            <div
+                                data-aos="zoom-in-left"
+                                class="feature-2-method"
+                                data-aos-delay="300"
+                            >
                                 <p class="feature-2-method__title">
                                     Choose payment method:
                                 </p>
@@ -815,7 +858,9 @@
                                 type="email"
                                 name="email"
                                 id="email"
+                                required
                                 validator
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
                             <button type="submit" class="btn footer__form-btn">
                                 Subscribe
